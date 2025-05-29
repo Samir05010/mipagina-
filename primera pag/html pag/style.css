@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    
+    margin-top: 50px;
+}
+body {
+  /* Degradado lineal de gris claro a gris oscuro (de arriba a abajo) */
+  /* background: linear-gradient(to bottom, #f5f5f5, #999999);//*
+  
+  /* Alternativa: degradado en diagonal */
+   background: linear-gradient(to bottom right, #a1a0a0, #3b3b3b);
+  
+  /* Para que el fondo ocupe toda la pantalla */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="text-center bg primary">
+        <h1 style="font-family: 'G', sans-serif; font-size: 2.5rem; color: #070707; text-align: center; line-height: 1.3; margin-bottom: 20px;">
+         Bienvenidos a mi  <span style="color: #ececec;">Primera</span> pagina <br> 
+            <span style="border-bottom: 3px solid #e2dada;">Web</span>
+       </h1>
+       <div class="imagen-centro">
+            <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <img src="perfil.jpeg" alt="Tu foto" id="fotoPerfil" class="img-animada" style="border-radius: 50%; box-shadow: 0 2px 8px #0002; width: 180px; height: 180px; object-fit: cover; margin: 20px auto; display: block;">
+                <div class="nombre-usuario" style="text-align:center; color:#222; font-size:1.3rem; font-weight:bold; margin-top:10px; text-shadow: 0 1px 4px #fff8;">Samir Tomás Gómez Correa</div>
+            </div>
+        </div>
+    </header>
+     
+    <main class="container mt-4">
+        <section class="mb-4">
+            <h2>Sobre mí</h2>
+            <p>Soy un principiante con muchas ganas de aprender sobre la programación Full Stack, Base De Datos, Python y Machine Learning.</p>
+        </section>
+        <section class="mb-4">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python</li>
+                <li>Trabajo en equipo</li>
+                <li>Resolución de problemas</li>
+            </ul>
+        </section>
+        <section class="mb-4">
+            <h2>Proyectos</h2>
+            <ul>
+                <li><strong>Mi Portfolio Web</strong> – Página personal con información y proyectos destacados.</li>
+                <li><strong>App de Tareas</strong> – Aplicación para organizar tareas diarias.</li>
+            </ul>
+        </section>
+        <section class="mb-4">
+            <h2>Educación</h2>
+            <ul>
+                <li>Secundario completo</li>
+                <li>Cursos de programación online</li>
+                <li>Cursando en la Universidad Nacional De Hurlingham</li>
+            </ul>
+              
+        </section>
+        <section class="mb-4">
+            <h2>Intereses</h2>
+            <p>Busco una buena experiencia en el hambiente de la programación y poder vivir de esto.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Montserrat', Arial, sans-serif;
+    position: relative;
+    z-index: 1;
+    background: #666060; /* Fondo blanco */
+}
+
+main.container {
+    background: #03030357;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #0001;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+}
+
+section.mb-4 {
+    margin-bottom: 2.5rem !important;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    background: #f5f5f58e; /* Gris claro */
+    box-shadow: 0 2px 8px #0001;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    color: #e4e4e4;
+}
+h2 {
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+.nombre-usuario {
+    text-align: center;
+    color: #111;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 0 1px 4px #fff8;
+    letter-spacing: 1px;
+}
+
+.img-animada {
+    animation: flotar 2.5s ease-in-out infinite;
+    border: 4px solid #222;
+    background: #fff;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+    100% { transform: translateY(0); }
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0 0.5rem 0;
+    border-radius: 18px 18px 0 0;
+    font-size: 1rem;
+    margin-top: 2rem;
+    letter-spacing: 1px;
+}
+
+.fondo-imagen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    object-fit: cover;
+    opacity: 0.18; 
+    pointer-events: none;
+}
+
+.acordeon-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 250px;
+    z-index: 1000;
+}
+
+.acordeon-btn {
+    background: #222;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 5px 5px 0 0;
+    transition: background 0.2s;
+}
+
+.acordeon-btn:hover {
+    background: #111;
+}
+
+.acordeon-content {
+    background: #f5f5f5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border-radius: 0 0 5px 5px;
+}
+
+.acordeon-content.show {
+    max-height: 200px;
+}
+
+.acordeon-content a {
+    display: block;
+    padding: 10px;
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.2s;
+}
+
+.acordeon-content a:hover {
+    background: #e0e0e0;
+}
+
+.imagen-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-cv-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #222;
+    color: #fff;
+    padding: 14px 22px;
+    border-radius: 30px;
+    box-shadow: 0 4px 16px #0002;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    z-index: 1100;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.btn-cv-float:hover {
+    background: #444;
+    color: #fff;
+    box-shadow: 0 6px 24px #0003;
+}
+
+.imagen-centro img {
+    width: 180px;
+    max-width: 60vw;
+    height: auto;
+}
+
+main.container {
+    padding: 1.2rem 0.5rem;
+}
+
+.btn-cv-float {
+    padding: 12px 16px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem !important;
+    }
+    .main.container, main.container {
+        padding: 0.5rem 0.2rem;
+    }
+    .btn-cv-float {
+        right: 10px;
+        bottom: 10px;
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+    .acordeon-container {
+        left: 10px;
+        bottom: 10px;
+        width: 90vw;
+        max-width: 320px;
+    }
+    .imagen-centro img {
+        width: 120px;
+        max-width: 80vw;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.1rem !important;
+    }
+    .main.container, main.container {
+        padding: 0.2rem 0.1rem;
+    }
+    .btn-cv-float {
+        right: 4px;
+        bottom: 4px;
+        padding: 8px 8px;
+        font-size: 0.85rem;
+    }
+    .acordeon-container {
+        left: 4px;
+        bottom: 4px;
+        width: 96vw;
+        max-width: 98vw;
+    }
+    .imagen-centro img {
+        width: 80px;
+        max-width: 90vw;
+    }
+}
+    </style>
+    <!-- Imagen de fondo para toda la página -->
+    <img src="fondo.jpeg" alt="Fondo" class="fondo-imagen">
+    <div class="acordeon-container">
+        <button class="acordeon-btn" id="btnAcordeon">Contacto</button>
+        <div class="acordeon-content" id="contenidoAcordeon">
+            <a href="mailto:samir.tg.correa@gmail.com">Gmail</a>
+            <a href="https://www.linkedin.com/in/samir-tomas-g%C3%B3mez-correa-239b872b9/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Samir05010" target="_blank">GitHub</a>
+        </div>
+    </div>
+    <!-- Botón flotante para el CV -->
+    <a href="cv samir correa.pdf" target="_blank" class="btn-cv-float" title="Ver mi CV">
+        <span style="font-size:1.5rem; vertical-align:middle;">📄</span> Ver CV
+    </a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnAcordeon = document.getElementById('btnAcordeon');
+            const contenidoAcordeon = document.getElementById('contenidoAcordeon');
+
+            btnAcordeon.addEventListener('click', function() {
+                contenidoAcordeon.classList.toggle('show');
+                if (contenidoAcordeon.classList.contains('show')) {
+                    btnAcordeon.textContent = 'Cerrar Contacto';
+                } else {
+                    btnAcordeon.textContent = 'Contacto';
+                }
+            });
+        });
+    </script>
+    <footer>
+        &copy; 2025 Samir Tomás Gómez Correa &mdash; Estudiante de Programación.
+    </footer>
+</body>
+</html>
